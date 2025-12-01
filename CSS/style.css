@@ -1,0 +1,18 @@
+table{
+border: 2px;
+border-collapse: collapse;
+border-color: rgb(0, 0, 0);
+text-align: center;
+text-decoration-color: crimson;
+width: 100%;
+}
+th{
+    background-color: lightgray;
+}
+td{
+    color: crimson;
+}
+ol, li{
+list-style: lower-roman;
+}
+nav
