@@ -4,7 +4,7 @@ border-collapse: collapse;
 border-color: rgb(0, 0, 0);
 text-align: center;
 text-decoration-color: crimson;
-width: 100%;
+width: 100%; height: fit-content;
 }
 th{
     background-color: lightgray;
