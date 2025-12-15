@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd-Even Checker</title>
+  </head>
+  <body>
+    <label for="number">Number</label><br />
+    <input type="number" id="number" style="background-color: rgba(244, 248, 248, 0);"/><br />
+
+    <button onclick="CheckOddEven()" style="background-color: gold;">CHECK</button><br />
+    <label for="result" id="result">ERROR</label>
+
+    <script>
+      function CheckOddEven() {
+        let number = document.getElementById("number").value;
+
+        let proceedNumber = Number.parseInt(number);
+
+        if (proceedNumber % 2 == 0) {
+          document.getElementById("result").innerHTML = "<b>EVEN</b>";
+        } else {
+          document.getElementById("result").innerHTML = "<b>ODD</b>";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <label for="name">Name</label><br />
+    <input
+      type="text"
+      id="name"
+      style="background-color: rgba(244, 248, 248, 0)"
+    /><br />
+
+    <button onclick="HelloUser()" style="background-color: gold">Entry</button
+    ><br />
+    <label for="greetings" id="hello"></label>
+
+    <script>
+      function HelloUser() {
+        let name = document.getElementById("name").value;
+
+        document.getElementById("hello").innerHTML = "<b>Hello </b> " + name;
+      }
+    </script>
+  </body>
+</html>
