@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="User Name"><b>User Name</b></label
+    ><br />
+    <input type="text" id="userName" /><br />
+
+    <label for="Password"><b>Password</b></label
+    ><br />
+    <input type="password" id="password" /><br />
+    
+
+    <button onclick="login()" style="background-color: cyan">
+      <b>LOG IN</b></button
+    ><br />
+<hr>
+    <span id="result"></span>
+
+    <script>
+            function login() {
+              let userName = document.getElementById("userName").value;
+              let password = document.getElementById("password").value;
+
+              if (userName == "Sajin007" && password == 48007)
+              {
+                document.getElementById("result").innerHTML =
+                  "<b>WELCOME </b>" + userName;
+                document.getElementById("result").style.color = "green";
+              } else {
+                  document.getElementById("result").innerHTML =
+                  "<b>User name or Password invalid</b>";
+                document.getElementById("result").style.color = "red";
+              }
+            }
+    </script>
+  </body>
+</html>

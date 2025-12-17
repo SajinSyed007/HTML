@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Grade</title>
+  </head>
+  <body>
+    <script>
+      let mark = prompt("Enter The Mark");
+
+      if (mark < 0) {
+        alert("Invalid mark");
+      } else if (mark < 33) {
+        document.writeln("<b>Fail. Bring your parents tomorrow...</b>");
+      } else if (mark < 40) {
+        document.writeln("<b>D Grade. Barely survived this time.</b>");
+      } else if (mark < 50) {
+        document.writeln("<b>C Grade. Average, go and study.</b>");
+      } else if (mark < 60) {
+        document.writeln("<b>B Grade. Try a little bit more.</b>");
+      } else if (mark < 70) {
+        document.writeln(
+          "<b>A- Grade. Doing great, just a little bit more.</b>"
+        );
+      } else if (mark < 80) {
+        document.writeln("<b>A Grade. So close, you can do it in future.</b>");
+      } else if (mark <= 100) {
+        document.writeln(
+          "<b>A+ Grade. Welcome BRILLIANT. Now you are giving a party.</b>"
+        );
+      } else {
+        document.writeln("<b>YOU ARE NOT A HUMAN !!!!!</b>");
+      }
+    </script>
+  </body>
+</html>
