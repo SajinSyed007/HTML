@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Game</title>
+  </head>
+  <body>
+    <script>
+      let userinput = prompt("Guess a number between 0-9");
+      let chance = 3;
+      let actualNumber = Number.parseInt(Math.random() * 10);
+      console.log(actualNumber);
+      let attempt = 1;
+      let answer = false;
+
+      while (attempt < chance) {
+        if (userinput == actualNumber) {
+          document.writeln("<h1>SABBASSSSSSSSSSSS!!!!!</h1>");
+          answer = true;
+          break;
+        }
+        attempt++;
+        userinput = prompt("Again guess a number between 0-9");
+      }
+      if (!answer) {
+        document.writeln("<h1>HALKA MUTI HUTI JA !!!</h1>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Number Detection</title>
+  </head>
+  <body>
+    <script>
+      let userinput = prompt("Enter The Number");
+      let counter = 0;
+      for (let i = 1; i <= userinput; i++) {
+        if (userinput % i == 0) {
+          counter = counter + 1;
+        }
+      }
+
+      if(counter == 2){
+        document.writeln("<h1 style='color: green'> is a PRIME NUMBER.</h1>");
+        document.writeln.style.color = "green";
+
+      } else{
+        document.writeln("<h1 style='color: red'>It is not a PRIME NUMBER.</h1>");
+        document.writeln.style.color = "red";
+
+      }
+    </script>
+  </body>
+</html>

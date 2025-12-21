@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+              let arraySize = prompt("Enter Array Size");
+              let myArray = []; 
+              let sum = 0;
+              let text ="";
+
+      for(let index = 0; index < arraySize; index++)
+      {
+          let arrayItem = prompt("Enter The Item for " + (index+1));
+
+          //myArray = [10,20,30];
+          myArray[index] = arrayItem;
+      }
+      document.writeln(myArray + "<hr>");
+
+      for (let i = 0; i < myArray.length; i++){
+        sum = sum + Number.parseInt(myArray[i]);
+        text = text + myArray[i] + "+";
+      }
+
+let newtext = text.substring(0, text.length - 1);
+document.writeln(newtext + "  = " + sum);
+
+
+    </script>
+  </body>
+</html>
