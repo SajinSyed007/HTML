@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel vs Consonant</title>
+  </head>
+  <body>
+    <script>
+      let alphabet = prompt("Input an alphabet-");
+      let alpha = alphabet.toLowerCase();
+
+      if (
+        alpha === "a" ||
+        alpha === "e" ||
+        alpha === "i" ||
+        alpha === "o" ||
+        alpha === "u"
+      ) {
+        document.writeln("<br>" + alpha + " is a VOWEL." + "</br>");
+      } else {
+        document.writeln("<br" + alpha + " is a CONSONANT." + "</br>");
+      }
+    </script>
+  </body>
+</html>
