@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Calculator</title>
+</head>
+<body bgcolor="cyan">
+    <form action="">
+        <label for="" >Length</label><br>
+        <input type="text" id="length"><br>
+
+        <label for="" >Width</label><br>
+        <input type="text" id="width"  oninput="doCalculateRectangular()"><br>
+
+<label for="area">Area</label><br>
+<span id="area"></span><br>
+
+<label for="perimeter">Perimeter</label><br>
+<span id="perimeter"></span>
+
+<script>
+    function doCalculateRectangular(){
+        const l = parseFloat(document.getElementById("length").value);
+        const w = parseFloat(document.getElementById("width").value);
+
+        if (isNaN(l) || isNaN(w)) {
+            document.getElementById("area").textContent = '';
+            document.getElementById("perimeter").textContent = '';
+            return;
+        }
+
+        document.getElementById("area").textContent = l * w;
+        document.getElementById("perimeter").textContent = 2 * (l + w);
+    }
+</script>
+</form>
+</body>
+</html>

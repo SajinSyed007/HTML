@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        let penPrice = prompt("Enter the price of the item- ");
+        let penUnit = prompt("Enter the number of unit- ");
+        
+        
+        let discount = prompt("Enter the discount available-")
+        let totalPrice = penPrice*penUnit;
+        let discountPrice = totalPrice*discount/100;
+        
+        
+
+        
+        if(totalPrice >= 100) {
+            document.writeln("You have got " + discountPrice + " taka discount and you have to pay " + (totalPrice-discountPrice) + " taka.");
+        }
+        
+        else {
+            document.writeln("You have to pay " + totalPrice + " taka.");
+        }
+    </script> 
+</body>
+</html>
